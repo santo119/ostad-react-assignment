@@ -8,6 +8,10 @@ import { useEffect, useState } from 'react';
 import Header from './layouts/Header';
 import BalanceCard from './components/BalanceCard';
 import RecentTransaction from './components/RecentTransaction';
+import WeeklyActivity from './components/WeeklyActivity';
+import Expense from './components/Expense';
+import QuickTransfer from './components/QuickTransfer';
+import BalanceHistory from './components/BalanceHistory';
 
 function App() {
 
@@ -53,6 +57,24 @@ function App() {
             <RecentTransaction></RecentTransaction>
 
            </div>
+
+           <div className="grid grid-cols-1 md:grid-cols-12 gap-3 my-4 justify-center items-center">
+              <div className=" md:col-span-7">
+                <WeeklyActivity />
+              </div>
+              <div className="md:col-span-5">
+                <Expense />
+              </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-[25px] my-4">
+            <div className="col-span-4">
+              <QuickTransfer />
+            </div>
+            <div className="col-span-8">
+              <BalanceHistory />
+            </div>
+          </div>
 
           </main>
 
