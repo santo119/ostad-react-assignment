@@ -1,6 +1,7 @@
 
 import React from 'react';
 import logo from '../../src/assets/bankCash.png'
+import { ImCross } from "react-icons/im";
 
 const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
     const [active, setActive] = React.useState("home");
@@ -23,7 +24,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             className="absolute top-5 right-3 p-1 md:hidden"
             onClick={() => setIsSidebarOpen(false)}
           >
-            ❌
+            <ImCross />
           </button>
           {/** Sidebar Header */}
           <div className="flex items-center space-x-[9px] mb-6 p-4">

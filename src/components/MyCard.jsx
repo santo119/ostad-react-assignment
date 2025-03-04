@@ -33,13 +33,13 @@ const MyCard = () => {
     return (
         <div className="">
         <h2 className="font-semibold text-lg ">My Cards</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {cardData.slice(0, 1).map((card, index) => (
             <div
               key={index}
-              className="min-w-[350px] w-full min-h-[235px] rounded-[25px] bg-gradient-to-r from-[#4C49ED] to-[#0A06F4] via-[#3A38E0] flex flex-col text-white"
+              className="lg:min-w-[300px]  lg:min-h-[235px] rounded-[25px] bg-gradient-to-r from-[#4C49ED] to-[#0A06F4] via-[#3A38E0] flex flex-col text-white"
             >
-              <div className="flex flex-col p-6 gap-8">
+              <div className="flex flex-col p-3 gap-5">
                 <div className="inline-flex justify-between items-center">
                   <p className="inline-flex flex-col">
                     <span className="text-[12px] font-normal leading-normal">

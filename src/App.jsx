@@ -6,6 +6,8 @@ import MyCard from './components/MyCard';
 import SideBar from './layouts/SideBar';
 import { useEffect, useState } from 'react';
 import Header from './layouts/Header';
+import BalanceCard from './components/BalanceCard';
+import RecentTransaction from './components/RecentTransaction';
 
 function App() {
 
@@ -45,8 +47,11 @@ function App() {
             
             {/* summaryCard, summaryTemp, recent Transaction  */}
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 overflow-x-auto md:overflow-visible scroll-smooth snap-x snap-mandatory">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2  ">
             <MyCard></MyCard>
+            <BalanceCard></BalanceCard>
+            <RecentTransaction></RecentTransaction>
+
            </div>
 
           </main>
